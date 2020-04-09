@@ -1,0 +1,54 @@
+$g: gold;
+
+.visualHide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.header {
+  height: 36px;
+  background: #2d2d2d;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn {
+  margin: 6px 6px 6px 0;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  background-color: gold;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s background-color;
+
+  &:hover,
+  &:active {
+    background-color: darken($g, 15%);
+  }
+}
+
+.header__logo {
+  margin-left: 15px;
+  height: 24px;
+  img {
+    width: 85px;
+  }
+}
+
+.header__buttonWrap {
+  display: flex;
+}

@@ -1,0 +1,22 @@
+$g: gold;
+
+.pixelSize__btn {
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: gold;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  &.active {
+    background-color: lighten($g, 25%);
+  }
+
+  &:hover {
+    background-color: darken($g, 15%);
+  }
+}

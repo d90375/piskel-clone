@@ -1,0 +1,10 @@
+.frames__move{
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  right: 95px;
+  z-index: 2;
+  position: absolute;
+  cursor: move;
+  background: rgba(100, 100, 100, 0.6) url('../../../../assets/resources/img/icons.png') no-repeat -274px -46px;
+}

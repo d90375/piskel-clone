@@ -1,0 +1,44 @@
+.frames__window {
+  display: block;
+  position: relative;
+  border-radius: 3px;
+  width: 125px;
+  height: 125px;
+  margin-bottom: 10px;
+  border: 3px solid #353535;
+  background: url("../../../assets/resources/img/canvasBackground.png") repeat;
+  outline: 0;
+
+  &.active{
+    border-color: gold;
+  }
+  &.active:hover  {
+    border-color: gold;
+  }
+
+  &:hover {
+    border-color: #888888;
+  }
+}
+
+.frames__canvas {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+.frames__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: gold;
+  color: #000;
+  font-size: 1.2rem;
+}

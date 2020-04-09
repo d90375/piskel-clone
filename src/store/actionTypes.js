@@ -1,0 +1,15 @@
+export const FRAME_RATE = "FRAME_RATE";
+export const FRAME_ADD = "FRAME_ADD";
+export const FRAME_COPY = "FRAME_COPY";
+export const FRAME_UPDATE = "FRAME_UPDATE";
+export const FRAME_REMOVE = "FRAME_REMOVE";
+export const FRAME_INDEX = "FRAME_INDEX";
+export const SET_TOOL = "SET_TOOL";
+export const SET_PEN_SIZE = "SET_PEN_SIZE";
+export const SET_PRIMARY = "SET_PRIMARY";
+export const SET_SECONDARY = "SET_SECONDARY";
+export const SET_DRAW = "SET_DRAW";
+export const SET_CTX = "SET_CTX";
+export const SET_CANVAS_SIZE = "SET_CANVAS_SIZE";
+export const LOGGED_IN = "LOGGED_IN";
+export const LOGGED_OUT = "LOGGED_OUT";

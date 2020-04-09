@@ -1,0 +1,56 @@
+$cb3: #2d2d2d;
+
+.tools__colors {
+  margin-top: 10px;
+  width: 75px;
+  height: 75px;
+  position: relative;
+}
+
+.colors__input {
+}
+
+.colors__item {
+  width: 42px;
+  height: 42px;
+  border: 3px solid #2d2d2d;
+  cursor: pointer;
+
+  &.transparent {
+    background: transparent url("../../../assets/resources/img/colorTransperentBackground.png") repeat;
+  }
+
+  &:first-child {
+    z-index: 1;
+    position: relative;
+    margin-left: 10px;
+  }
+  &:nth-child(2) {
+    z-index: 0;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+
+  &:active,
+  &:hover {
+    border-color: lighten($cb3, 15%);
+  }
+}
+
+.colors__arrow {
+  position: absolute;
+  opacity: 0.2;
+  left: 18px;
+  top: 51px;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../../../assets/resources/img/icons.png");
+  background-position: -274px -222px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}

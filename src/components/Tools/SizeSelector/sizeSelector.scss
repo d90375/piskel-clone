@@ -1,0 +1,57 @@
+$cb: #2d2d2d;
+
+.tools__sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.tools__sizeItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2d2d2d;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.active{
+    border: 2px solid gold;
+  }
+  &.active:after{
+    background-color: gold;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+  }
+
+  &:first-child:after {
+    width: 4px;
+    height: 4px;
+  }
+
+  &:nth-child(2):after {
+    width: 6px;
+    height: 6px;
+  }
+  &:nth-child(3):after {
+    width: 8px;
+    height: 8px;
+  }
+  &:last-child:after {
+    width: 10px;
+    height: 10px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: lighten($cb, 15%);
+  }
+}

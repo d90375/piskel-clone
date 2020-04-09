@@ -1,0 +1,54 @@
+$cb2: #2d2d2d;
+
+.tools__buttons {
+  display: grid;
+  grid-template-columns: 48px 48px;
+  grid-template-rows: 48px 48px 48px;
+  grid-gap: 4px;
+
+}
+
+.tools__btn {
+  background-color: #2d2d2d;
+  cursor: pointer;
+  border: 2px solid #2d2d2d;
+  outline: 0;
+
+  &.active {
+    border: 2px solid gold;
+  }
+
+  @mixin bgcimg() {
+    background-image: url("./../../../assets/resources/img/icons.png");
+  }
+
+  &:nth-child(1) {
+    @include bgcimg();
+    background-position: -182px -92px;
+  }
+  &:nth-child(2) {
+    @include bgcimg();
+    background-position: -46px -136px;
+  }
+  &:nth-child(3) {
+    @include bgcimg();
+    background-position: -228px -92px;
+  }
+  &:nth-child(4) {
+    @include bgcimg();
+    background-position: -228px -138px;
+  }
+  &:nth-child(5) {
+    @include bgcimg();
+    background-position: -274px 0px;
+  }
+  &:nth-child(6) {
+    @include bgcimg();
+    background-position: -46px -228px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: lighten($cb2, 15%);
+  }
+}
